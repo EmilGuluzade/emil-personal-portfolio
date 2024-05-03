@@ -11,6 +11,7 @@
 .banner .banner__content {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .banner__content-left {
   width: 50%;
@@ -33,6 +34,14 @@
   color: black;
   margin-right: 10px;
 }
-.watch-btn{
-  color: white;font-size: 20px;
+.watch-btn {
+  color: white;
+  font-size: 20px;
+}
+.banner__content-right {
+  padding: 15px;
+  background: url("https://zyan.vercel.app/images/shapes/banner_shape.png");
+  background-position: center;
+  background-size: cover;overflow: hidden;
+
 }

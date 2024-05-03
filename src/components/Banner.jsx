@@ -10,7 +10,7 @@ const Banner = () => {
         <div className="banner__content">
           <div className="banner__content-left">
             <h1>
-              HI, I'M ZYAN! CREATIVE <span>DEVELOPER</span>
+              HI, I'M EMIL! CREATIVE <span>DEVELOPER</span>
             </h1>
             <p>
               I'm a passionate UI/UX designer with a mission to create
@@ -23,6 +23,9 @@ const Banner = () => {
             <Button >Download Me <i className="fa-solid fa-download"></i></Button>
               <a className="watch-btn" href=""><i className="fa-sharp fa-solid fa-circle-play"></i>Watch The Video</a>
             </div>
+          </div>
+          <div className="banner__content-right">
+            <img src="https://zyan.vercel.app/images/banner_img_1.png" alt="" />
           </div>
         </div>
       </div>

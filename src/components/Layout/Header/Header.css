@@ -1,0 +1,38 @@
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 101;
+}
+
+.header .container {
+  background-color: #141c27;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu i {
+  cursor: pointer;
+  padding: 25px;
+  background-color: #55e6a5;
+  font-size: 30px;
+}
+.navbar {
+  display: flex;
+  gap: 15px;
+  font-size: 14px;
+}
+.navbar a {
+ 
+  color: white;
+  transition: 0.3s;
+}
+.navbar a:hover {
+  color: #55e6a5;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+}

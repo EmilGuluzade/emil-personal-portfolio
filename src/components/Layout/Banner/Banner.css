@@ -20,12 +20,7 @@
   font-size: 60px;
   color: white;
 }
-.banner__content-left p {
-  margin: 50px 0;
-  font-size: 20px;
-  color: #a2a2a2;
-  font-weight: 500;
-}
+
 .fa-circle-play {
   background-color: #55e6a5;
   border-radius: 50%;
@@ -38,10 +33,34 @@
   color: white;
   font-size: 20px;
 }
-.banner__content-right {
-  padding: 15px;
-  background: url("https://zyan.vercel.app/images/shapes/banner_shape.png");
-  background-position: center;
-  background-size: cover;overflow: hidden;
 
+.banner__content-right {
+  background: url("https://zyan.vercel.app/images/shapes/banner_shape.png");
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 35px;
+
+  animation-name: hero;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  transition: ease;
+}
+
+@keyframes hero {
+  0% {
+    padding: 35px;
+  }
+  25% {
+    padding: 30px 35px;
+  }
+  50% {
+    padding: 25px 35px;
+  }
+  75% {
+    padding: 30px 35px;
+  }
+  100% {
+    padding: 35px;
+  }
 }

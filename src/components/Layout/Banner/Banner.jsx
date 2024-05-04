@@ -1,6 +1,7 @@
 import React from "react";
 import "./Banner.css";
-import Button from "./Button";
+import Button from "../../Utils/Button";
+
 
 const Banner = () => {
  
@@ -12,7 +13,7 @@ const Banner = () => {
             <h1>
               HI, I'M EMIL! CREATIVE <span>DEVELOPER</span>
             </h1>
-            <p>
+            <p className="text">
               I'm a passionate UI/UX designer with a mission to create
               delightful and intuitive digital experiences. With a strong
               foundation in design principles and a keen eye for detail, I
@@ -20,7 +21,7 @@ const Banner = () => {
               interfaces that captivate and engage.
             </p>
             <div className="banner__buttons">
-            <Button >Download Me <i className="fa-solid fa-download"></i></Button>
+            <Button  >Download Me <i className="fa-solid fa-download"></i></Button>
               <a className="watch-btn" href=""><i className="fa-sharp fa-solid fa-circle-play"></i>Watch The Video</a>
             </div>
           </div>

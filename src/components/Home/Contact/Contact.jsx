@@ -1,7 +1,12 @@
-import React from "react";
+import React,{useEffect} from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import "./Contact.css";
 import Button from "../../Utils/Button";
 const Contact = () => {
+  useEffect(() => {
+    AOS.init();
+  }, [])
   return (
     <section id="contact" className="contact">
       <div className="container">
@@ -17,7 +22,7 @@ const Contact = () => {
             velit, sed quia non numquam
           </p>
           <div className="contactCards">
-            <div className="contactCard">
+            <div className="contactCard" data-aos="fade-right">
               <svg
                 width="75"
                 height="60"
@@ -50,7 +55,7 @@ const Contact = () => {
               <h2>10k+</h2>
               <p>Complete project</p>
             </div>
-            <div className="contactCard">
+            <div className="contactCard"  data-aos="fade-right">
               <svg
                 width="75"
                 height="60"
@@ -90,7 +95,7 @@ const Contact = () => {
           </div>
         </div>
         <div className="contactRight">
-          <h2>GET TOUCH ME?</h2>
+          <h2 data-aos="fade-up">GET TOUCH ME?</h2>
           <p>
             For your car we will do everything advice design in us repairs and
             maintenance We are the some preferred.

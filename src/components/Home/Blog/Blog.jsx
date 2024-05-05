@@ -1,7 +1,12 @@
-import React from "react";
+import React,{useEffect} from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Button from "../../Utils/Button";
 import "./Blog.css";
 const Blog = () => {
+  useEffect(() => {
+    AOS.init();
+  }, [])
   let blogs = [
     {
       img: "https://zyan.vercel.app/images/blog/1.jpg",
@@ -31,8 +36,8 @@ const Blog = () => {
       <div className="container">
         <div className="blog__heading">
           <div className="section__heading-left">
-            <h5 className="green__heading-left">MY BLOG</h5>
-            <h2 className="white__heading-left">
+            <h5 className="green__heading-left" data-aos="fade-up">MY BLOG</h5>
+            <h2 className="white__heading-left" data-aos="fade-up">
               Unlocking the potential of your <br />
               personal brand
             </h2>
@@ -43,7 +48,7 @@ const Blog = () => {
         </div>
         <div className="blog__cards">
           {blogs.map((item,index) => (
-            <div key={index} className="blog__card">
+            <div data-aos="fade-right" key={index} className="blog__card">
               <img className="blog__card-img" src={item.img} alt="" />
               <div className="blog__card-content">
                 <span>{item.date}</span>

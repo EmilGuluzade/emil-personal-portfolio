@@ -1,7 +1,12 @@
+import { useEffect } from "react";
 import React from "react";
 import "./Service.css";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const Service = () => {
+  useEffect(() => {
+    AOS.init();
+  }, [])
   let services = [
     {
       svg: <svg width="99" height="101" viewBox="0 0 99 101" fill="none" xmlns="http://www.w3.org/2000/svg" id="null" className="svg w-100 replaced-svg">
@@ -41,14 +46,14 @@ const Service = () => {
     <section id="service" className="service">
       <div className="container">
         <div className="section__heading">
-          <h5 className="green__heading">MY SERIVCE</h5>
-          <p className="white__heading">
+          <h5  data-aos="fade-up" className="green__heading">MY SERIVCE</h5>
+          <p  data-aos="fade-up"className="white__heading">
             Crafting stories through <br /> design and innovation
           </p>
         </div>
         <div className="service__cards">
           {services.map((item,index) => (
-              <div key={index} className="service__card">
+              <div data-aos="fade-right" key={index} className="service__card">
               {item.svg}
                 <h3>{item.title}</h3>
                 <p className="text">{item.describtion}</p>

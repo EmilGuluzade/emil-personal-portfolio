@@ -1,6 +1,11 @@
-import React from "react";
+import React,{useEffect} from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import "./Footer.css";
 const Footer = () => {
+  useEffect(() => {
+    AOS.init();
+  }, [])
   let footerItems = [
     {
       svg: (
@@ -80,7 +85,7 @@ const Footer = () => {
       <div className="footer__top">
          {
         footerItems.map((item,index)=>(
-       <div key={index} className="footer_item">
+       <div data-aos="fade-left"  key={index} className="footer_item">
           <div className="footer_item-svg">
             {item.svg}
           </div>

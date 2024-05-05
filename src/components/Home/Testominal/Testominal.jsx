@@ -1,4 +1,6 @@
-import React from "react";
+import React,{useEffect} from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import "./Testominal.css";
 import quot from "../../../assets/images/quot.png";
 import eska from "../../../assets/images/eska.jpeg";
@@ -8,6 +10,9 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
 function SampleNextArrow(props) {
+  useEffect(() => {
+    AOS.init();
+  }, [])
   const { className, style, onClick } = props;
   return (
     <div
@@ -53,8 +58,8 @@ const Testominal = () => {
     <section className="testominal">
       <div className="container">
         <div className="section__heading">
-          <h5 className="green__heading">CLIENTS REVIEW</h5>
-          <p className="white__heading">My testomonial</p>
+          <h5 className="green__heading" data-aos="fade-up">CLIENTS REVIEW</h5>
+          <p className="white__heading" data-aos="fade-up">My testomonial</p>
         </div>
         <div className="slider-container">
           <Slider {...settings}>

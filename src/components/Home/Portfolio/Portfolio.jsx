@@ -1,12 +1,17 @@
-import React from "react";
+import React,{useEffect} from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import "./Portfolio.css";
 const Portfolio = () => {
+  useEffect(() => {
+    AOS.init();
+  }, [])
   return (
     <section id="projects" className="videosect">
       <div className="container">
         <div className="section__heading-left">
-          <h5 className="green__heading-left">ABOUT ME</h5>
-          <h2 className="white__heading-left">
+          <h5 className="green__heading-left" data-aos="fade-up">MY RECENT PORTFOLIO</h5>
+          <h2 className="white__heading-left" data-aos="fade-up">
           Elevate your brand to new <br />
 heights with our portfolio <br />
 expertise

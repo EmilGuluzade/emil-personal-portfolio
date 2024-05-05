@@ -1,0 +1,120 @@
+.contact {
+  background: #02050a;
+  padding: 130px 0;
+}
+.contact .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  font-family: "Poppins", sans-serif;
+}
+.contactLeft {
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+  flex-direction: column;
+  color: white;
+  width: 50%;
+  gap: 30px;
+}
+.contactLeft h2 {
+  font-size: 50px;
+}
+.contactLeft h2 span {
+  font-size: 70px;
+}
+.contactCards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+}
+.contactCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 30px;
+  background: #09101a;
+  width: 300px;
+}
+.contactRight {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 50px;
+  padding: 20px;
+  background: #09101a;
+}
+.contactRight h2 {
+  color: white;
+  font-size: 40px;
+}
+.contactRight p {
+  color: gray;
+  font-size: 16px;
+}
+.contactRight form {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 50px;
+  width: 100%;
+  padding: 0px 30px 0px 0px;
+}
+.contactRight form input,
+textarea {
+  padding: 15px;
+  border: 1px solid #55e6a5;
+  outline: none;
+  background: transparent;
+  width: 100%;
+  color: white;
+  font-size: 16px;
+}
+.contactRight form input::placeholder,
+.contactRight form textarea::placeholder {
+  color: rgba(211, 211, 211, 0.817);
+  font-weight: bold;
+}
+.form .textarea {
+  height: 200px;
+  resize: none;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+
+@media only screen and (max-width: 1000px) {
+  .contact .container {
+    flex-direction: column;
+  }
+
+  .contactCards {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .contact .container {
+    max-width: 300px;
+  }
+  .contactLeft {
+    width: 100%;
+  }
+  .contactRight {
+    width: 100%;
+  }
+  .contactLeft h2 {
+    font-size: 30px;
+  }
+  .contactLeft h2 span {
+    font-size: 50px;
+  }
+}

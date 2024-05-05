@@ -1,0 +1,47 @@
+.subscribe {
+  position: relative;
+  background: url("https://zyan.vercel.app/images/bg/subscribe.jpg") center /
+    cover no-repeat fixed;
+}
+.overlay {
+  background-color: #000000e3;
+  padding: 130px 0;
+}
+.subscribe .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.subscribe .container h3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: white;
+}
+.subscribe__input {
+  padding: 5px;
+  margin-top: 50px;
+  display: flex;
+  max-width: 500px;
+  border: 2px solid #55e6a5;
+
+  font-size: 16px;
+  font-weight: 500;
+  background: #131313;
+}
+.subscribe__input input {
+  border: none;
+  padding: 15px;
+  font-size: 18px;
+  outline: none;
+  width: 70%;
+  background-color: transparent;
+  color: white;
+}
+
+.subscribe__input a {
+  margin-right: 0px !important;
+}

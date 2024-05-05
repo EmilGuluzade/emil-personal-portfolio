@@ -68,7 +68,7 @@ const Footer = () => {
       title: "Send us email",
       li: (
         <>
-          <li><a href="">deanna.curtis@example.com</a></li>
+          <li><a href="">curtis@example.com</a></li>
           <li><a href="">curtis@example.com</a></li>
         </>
       ),
@@ -79,8 +79,8 @@ const Footer = () => {
       <div className="container">
       <div className="footer__top">
          {
-        footerItems.map((item)=>(
-       <div className="footer_item">
+        footerItems.map((item,index)=>(
+       <div key={index} className="footer_item">
           <div className="footer_item-svg">
             {item.svg}
           </div>

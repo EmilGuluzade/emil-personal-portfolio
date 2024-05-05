@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Changa:wght@600&family=Inspiration&family=Monoton&family=Roboto:ital,wght@0,100;1,100&display=swap');
+
+.marquee {
+  height: 220px;
+  display: flex;
+  align-items: center;
+  background-color: #55e6a5;
+}
+.marquee marquee {
+  font-size: 110px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  -webkit-text-stroke: 1px black;
+  -webkit-text-fill-color: transparent;
+}

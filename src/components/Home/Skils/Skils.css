@@ -1,0 +1,60 @@
+.skils {
+  padding: 130px 0;
+  background-color: #09101a;
+}
+.education {
+  display: flex;
+  flex-wrap: wrap;
+ margin-top: 60px;
+
+}
+.education__year {
+  width: 50%;
+  padding: 0 20px;
+}
+.education__year span{
+    font-size: 18px;
+    display: inline-block;
+    border: 1px solid #55e6a5;
+    padding: 11px 24px;
+    color: #55e6a5;
+}
+
+.education__year h3{
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+.skil__wrapper{
+    
+   width: 100%;
+    background: #151c25;
+    
+}
+.skil{
+    padding-left: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.7;
+   
+}
+.greenBar{
+background-color:#55e6a5;
+height: 6px;
+ display: block;
+}
+.skil__container{
+ width: 50%;
+ padding: 0 12px;margin-bottom: 50px;
+}
+
+@media only screen and (max-width:768px){
+    .education__year ,.skil__container{
+        width: 100%;
+    }
+}

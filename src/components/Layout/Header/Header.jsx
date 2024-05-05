@@ -3,7 +3,7 @@ import "./Header.css";
 import  logo  from "../../../assets/images/e.logo.png";
 const Header = () => {
   return (
-    <header className="header">
+    <header  className="header">
       <div className="container">
         <img
           src={logo}
@@ -11,22 +11,22 @@ const Header = () => {
         />
         <ul className="navbar">
           <li>
-            <a href="/">HOME</a>
+            <a href="#home">HOME</a>
           </li>
           <li>
-            <a href="/">ABOUT US</a>
+            <a href="#about">ABOUT US</a>
           </li>
           <li>
-            <a href="/">SERVICE</a>
+            <a href="#service">SERVICE</a>
           </li>
           <li>
-            <a href="/">PROJECTS</a>
+            <a href="#projects">PROJECTS</a>
           </li>
           <li>
-            <a href="/">BLOG</a>
+            <a href="#blog">BLOG</a>
           </li>
           <li>
-            <a href="/">CONTACT</a>
+            <a href="#contact">CONTACT</a>
           </li>
         </ul>
         <div className="menu">

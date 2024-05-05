@@ -19,7 +19,7 @@
 }
 .navbar {
   display: flex;
-  gap: 15px;
+  gap: 30px;
   font-size: 14px;
 }
 .navbar a {
@@ -35,4 +35,5 @@
   .navbar {
     display: none;
   }
+
 }

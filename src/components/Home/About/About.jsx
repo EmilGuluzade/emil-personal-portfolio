@@ -4,7 +4,7 @@ import Button from "../../Utils/Button";
 
 const About = () => {
   return (
-    <section className="about">
+    <section id="about" className="about">
       <div className="container">
         <div className="about__left">
           <div className="section__heading-left">
@@ -26,17 +26,18 @@ const About = () => {
           </div>
         </div>
         <div className="about__right">
-        <div className="about__right-img">
-             <img src="	https://zyan.vercel.app/images/about_img.jpg" alt="" />
-        
-        <div class="about__right-daily">
-        <i className="fa-solid fa-chart-pie"></i>
-                <div class="daily__text">
-                  <h4>Daily Activity</h4>
-                  <p >Loream is ispam</p>
-                </div>
+          <div className="about__right-img">
+            <img src="	https://zyan.vercel.app/images/about_img.jpg" alt="" />
+
+            <div class="about__right-daily">
+              <i className="fa-solid fa-chart-pie"></i>
+              <div class="daily__text">
+                <h4>Daily Activity</h4>
+                <p>Loream is ispam</p>
               </div>
-        </div></div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

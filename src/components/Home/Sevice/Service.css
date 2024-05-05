@@ -34,14 +34,3 @@
   top: -46px;
   width: 100px;
 }
-.previewsectioncardsimg {
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  top: -50px;
-  right: 50px;
-}
-
-.previewsectioncardsimg img {
-  border-radius: 50%;
-}

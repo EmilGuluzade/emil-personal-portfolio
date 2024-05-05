@@ -42,7 +42,18 @@
   .previewsectioncardsimg img{
     width: 100%;
     height: 100%;
+  }.previewsectioncardsimg {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: -50px;
+    right: 50px;
   }
+  
+  .previewsectioncardsimg img {
+    border-radius: 50%;
+  }
+  
   .previewsectioncardscrdcontent{
 
   

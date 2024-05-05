@@ -10,9 +10,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
 function SampleNextArrow(props) {
-  useEffect(() => {
-    AOS.init();
-  }, [])
+  
   const { className, style, onClick } = props;
   return (
     <div
@@ -33,7 +31,9 @@ function SamplePrevArrow(props) {
     />
   );
 }
-const Testominal = () => {
+const Testominal = () => {useEffect(() => {
+    AOS.init();
+  }, [])
   var settings = {
     infinite: true,
     speed: 1000,
